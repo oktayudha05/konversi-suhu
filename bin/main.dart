@@ -1,12 +1,12 @@
 import 'dart:io';
 
-Function toFahrenheit = (num celcius) => {(celcius * 9 / 5) + 32};
+Function toFahrenheit = (int celcius) => (celcius * 9 / 5) + 32;
 
 int toReamur(num celcius) {
   return (celcius * 4 / 5).round();
 }
 
-Function toKelvin = (num celcius) => {celcius + 273.15};
+Function toKelvin = (num celcius) => celcius + 273.15;
 
 void main() {
   stdout.write('Masukkan suhu dalam Celcius: ');
